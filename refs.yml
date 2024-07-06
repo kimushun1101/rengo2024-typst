@@ -48,7 +48,7 @@ ConferenceJP:
     page-range: 1-4
     parent:
         - type: Proceedings
-          title: 第65回自動制御連合講演会予稿集
+          title: 第67回自動制御連合講演会予稿集
 
 # 英文書籍
 Book:

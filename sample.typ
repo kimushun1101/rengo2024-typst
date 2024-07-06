@@ -1,5 +1,6 @@
 // MIT No Attribution
 // Copyright 2024 Shunsuke Kimura
+// https://github.com/kimushun1101/rengo2024-typst
 
 #import "libs/rengo/lib.typ": rengo, gothic, definition, lemma, theorem, corollary, proof
 #show: rengo.with(
@@ -122,6 +123,7 @@ $ y(t) &= C x(t) + D u(t) $
 = 参考文献
 文献の引用は本文中に @web @ConferenceJP @Journal のように書き，
 本文の最後にまとめて記述します．次のフォーマットを推奨します．
+// 参考文献を [1, 2, 3] と表示する方法は今のところ見つけられていません(2024.07.07)
 #set enum(numbering: "a)")
 + 雑誌論文の場合\
 	$[$番号$]$ 著者：論文題目；雑誌名，Vol.~巻, No.~号, pp.~始ページ--終ページ (発行年)
