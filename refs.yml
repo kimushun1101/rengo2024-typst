@@ -1,79 +1,78 @@
 # 英文学術論文誌
-kimura2015asymptotic:
+Journal:
     type: Article
-    title: Asymptotic stabilization of two-wheeled mobile robot via locally semiconcave generalized homogeneous control Lyapunov function
-    author: ["Kimura, Shunsuke", "Nakamura, Hisakazu", "Yamashita, Yuh"]
-    page-range: 122–130
-    date: 2015
+    title: Paper title
+    author: ["Jido, Taro", "Seigyo, Hanako", "Jido, Jiro"]
+    page-range: 1-4
+    date: 2024
     parent:
         type: Periodical
-        title: SICE Journal of Control, Measurement, and System Integration
-        volume: 5
-        issue: 2
-        publisher: Taylor & Francis
+        title: Journal Title
+        volume: 1
+        issue: 1
+        publisher: Jido Society
 
 # 和文学術論文誌
-kimura2017state:
-    language: jp
+JournalJP:
+    language: jp # 和文の判定に必要
     type: Article
-    title: 状態制約を有する非線形システムに対する状態方程式を保持する変換—システム蘇生変換—
-    author: ["木村, 駿介", "中村, 文一", "伊吹, 竜也", "三平, 満司"]
-    page-range: 337–345
-    date: 2017
+    title: 和文論文タイトル
+    author: ["自動, 太郎", "制御, 花子", "自動, 次郎"]
+    page-range: 100–110
+    date: 2024
     parent:
         type: Periodical
-        title: 計測自動制御学会論文集
-        volume: 53
-        issue: 6
-        publisher: 公益社団法人 計測自動制御学会
+        title: 自動学会論文集
+        volume: 2
+        issue: 2
+        publisher: 自動出版
 
 # 国際会議論文
-kimura2021control:
+Conference:
     type: Article
-    author:  ["Kimura, Shunsuke", "Naito,  Kakuya"]
-    title: Control barrier function based assist control with shifting sensor and footprint positions
-    date: 2021
-    # page-range: 1-6
+    author:  ["Jido, Taro", "Seigyo, Hanako", "Jido, Jiro"]
+    title: Conference paper title
+    date: 2024
+    page-range: 1-6
     parent:
         - type: Proceedings
-          title: IECON2021 - 47th annual conference of the IEEE industrial electronics society
+          title: Jido Conference
 
 # 国内学会
-kimura2020facility:
-    language: jp
+ConferenceJP:
+    language: jp # 和文の判定に必要
     type: Article
-    author:  ["木村, 駿介"]
-    title: 施設管理システムと自律移動ロボットとの連携実証試験
-    date: 2020
-    # page-range: 2A1–A03
+    author: ["自動, 太郎", "制御, 花子", "自動, 次郎"]
+    title: 自動連合講演会サンプル原稿
+    date: 2024
+    page-range: 1-4
     parent:
         - type: Proceedings
-          title: ロボティクス・メカトロニクス講演会講演概要集
+          title: 第65回自動制御連合講演会予稿集
 
 # 英文書籍
-khalil2002control:
+Book:
     type: Book
-    title: Control of nonlinear systems, Global Edition
-    author: Khalil, Hassan K
-    page-range: 1-400
-    publisher: Pearson Education
-    date: 2002
+    title: Book title
+    author: Seigyo, Hanako
+    page-range: 1-4
+    publisher: Jido Press
+    date: 2024
 
 # 和文書籍
-sugie1999feedback:
-    language: jp
+BookJP:
+    language: jp # 和文の判定に必要
     type: Book
-    title: フィードバック制御入門
-    author: ["杉江, 俊治", "藤田, 政之"]
-    page-range: 1-223
-    publisher: コロナ社
-    date: 1999
+    title: 書籍タイトル
+    author: ["制御, 花子"]
+    page-range: 1-200
+    publisher: 自動出版
+    date: 2024
 
 # Web サイト
-shimz2022visually:
+web:
     type: Web
-    title: 視覚障がい者移動支援ロボット「AIスーツケース」
-    publisher: 清水建設株式会社
+    title: 自動制御連合ホームページ
     url:
-        value: https://www.shimz.co.jp/solution/tech374/index.html
-        date: 2024-03-30
+        value: http://www.jjacc.org/
+        date: 2024-07-07
