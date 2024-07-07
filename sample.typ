@@ -47,6 +47,7 @@ A4用紙の（US Letterは不可），縦250 mm，横170 mmの枠内に収まる
   placement: top,
   // svg, png, jpg, gif に対応しています．
   // eps, pdf などには対応していません．(2024.07.07)
+  // https://typst.app/docs/reference/visualize/image/
   image("fig1.svg", width: 80%), 
   caption: [A sample figure.],
 ) <fig:samplefig>
@@ -107,15 +108,12 @@ $ y(t) &= C x(t) + D u(t) $
 // #definition("用語 A")[
 //   用語 A の定義を書きます．
 // ]<def:definition1>
-// #lemma[
-//   補題を書きます．タイトルは省力することもできます．
+// #lemma("補題 B")[
+//   補題 B を書きます．タイトルは省力することもできます．
 // ]<lem:lemma1>
-// #lemma("補題 C")[
+// #lemma[
 //   補題を書きます．番号は定義や補題ごとに 1 からカウントします．
 // ]<lem:lemma2>
-// #theorem("定理 D")[
-//   ここに定理を書きます．
-// ]<thm:theorem1>
 // #corollary[
 //   系を書きます．@def:definition1 のように，ラベルで参照することもできます．
 // ]
@@ -123,6 +121,7 @@ $ y(t) &= C x(t) + D u(t) $
 = 参考文献
 文献の引用は本文中に @web @ConferenceJP @Journal のように書き，
 本文の最後にまとめて記述します．次のフォーマットを推奨します．
+@Book
 // 参考文献を [1, 2, 3] と表示する方法は今のところ見つけられていません(2024.07.07)
 #set enum(numbering: "a)")
 + 雑誌論文の場合\
@@ -135,5 +134,5 @@ $ y(t) &= C x(t) + D u(t) $
 	$[$番号$]$ URL
 
 // 参考文献の情報は 15行目の `bibliography: bibliography("refs.yml", full: false)` で渡されます．
-// refs.yml に記載する． refs.bib に変更することもできるが，日本語論文の著者名がうまく表示分けができないため，日本語論文を含む参考文献リストの場合には yml で記載することを推奨します．(2024.07.07)
+// refs.yml に記載する． refs.bib に変更することもできますが，日本語論文の著者名がうまく表示分けができないため，日本語論文を含む参考文献リストの場合には yml で記載することを推奨します．(2024.07.07)
 // `full` を `true` に変更すると本文引用がされていない文献も出力される．出力確認のために `true` にしてもよいが，提出時には `false` に戻してください．

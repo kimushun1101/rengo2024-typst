@@ -31,12 +31,12 @@ JournalJP:
 Conference:
     type: Article
     author:  ["Jido, Taro", "Seigyo, Hanako", "Jido, Jiro"]
-    title: Conference paper title
+    title: Sample manuscript for the Japan joint automatic control conference
     date: 2024
     page-range: 1-6
     parent:
         - type: Proceedings
-          title: Jido Conference
+          title: Proc. 67th Japan Joint Automatic Control Conference
 
 # 国内学会
 ConferenceJP:
@@ -56,7 +56,7 @@ Book:
     title: Book title
     author: Seigyo, Hanako
     page-range: 1-4
-    publisher: Jido Press
+    publisher: Publisher
     date: 2024
 
 # 和文書籍
@@ -66,7 +66,7 @@ BookJP:
     title: 書籍タイトル
     author: ["制御, 花子"]
     page-range: 1-200
-    publisher: 自動出版
+    publisher: 出版社
     date: 2024
 
 # Web サイト
