@@ -72,12 +72,10 @@ Figures should be of sufficient quality for publication (300 dpi or higher is re
 
 
 == Equations
-// The \verb+eqnarray+ environment is re-defined to reduce spaces on both sides of the equal sign.
-// %You can modify or delete the corresponding part of the style file if you want.
-
 An example of equations is as follows:
-$ dot(x)(t) = A x(t) + B u(t) $
-$ y(t) = C x(t) + D u(t) $
+$ dot(x) (t) &= A x(t) + B u(t), $ <eq:system>
+$ y(t) &= C x(t) + D u(t). $ <eq:output>
+// The reference for the equation number is @eq:system or @eq:output.
 
 == Theorems
 The following is an example of the usage of the *theorem* environment.

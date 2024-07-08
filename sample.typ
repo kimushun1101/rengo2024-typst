@@ -82,17 +82,10 @@ PDF原稿を作成する際，図の画質が劣化しないよう，注意し�
 貼り付ける画像は，画質の良い（圧縮率の低い）画像を用いるか圧縮しない画像フォーマットを選ぶなど，各自工夫し，最終的なPDFファイルにおいて画質が劣化しないよう注意してください（300 dpi以上の画質を推奨します）．
 
 == 数式関係
-// \verb+eqnarray+ を使うと，等号（とは限りませんが）の両側のスペースが
-// 広くなりすぎるので，この間隔を変更しています．
-// 以下は，\verb+eqnarray+ 環境の使用例です．
-// \begin{eqnarray}
-//  \dot{x}(t) & = & A x(t) + B u(t) \\
-//  y(t) & = & C x(t) + D u(t)
-// \end{eqnarray}
 数式の使用例です．
-$ dot(x)(t) = A x(t) + B u(t) $
-$ y(t) = C x(t) + D u(t) $
-$ u(t) = k_upright("p") (x(t) + x_upright("ref")) $
+$ dot(x) (t) &= A x(t) + B u(t) $ <eq:system>
+$ y(t) &= C x(t) + D u(t) $ <eq:output>
+// 引用する場合には @eq:system と @eq:output としてください．
 
 == 定理環境
 以下は，theorem 環境の使用例です．
