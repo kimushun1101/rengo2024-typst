@@ -95,9 +95,9 @@
 
   // Configure figures.
   show figure.where(kind: table): set figure(placement: top, supplement: [Table])
-  show figure.where(kind: table): set figure.caption(position: top, separator: [: ])
+  show figure.where(kind: table): set figure.caption(position: top)
   show figure.where(kind: image): set figure(placement: top, supplement: [Fig.])
-  show figure.where(kind: image): set figure.caption(position: bottom, separator: [: ])
+  show figure.where(kind: image): set figure.caption(position: bottom)
 
   // Display the paper's title.
   align(center, text(16pt, title, weight: "bold"))
