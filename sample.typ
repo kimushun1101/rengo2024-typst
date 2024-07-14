@@ -2,7 +2,7 @@
 // Copyright 2024 Shunsuke Kimura
 // https://github.com/kimushun1101/rengo2024-typst
 
-#import "libs/rengo/lib.typ": rengo, gothic, definition, lemma, theorem, corollary, proof
+#import "libs/rengo/lib.typ": rengo, definition, lemma, theorem, corollary, proof
 #show: rengo.with(
   title: [自動制御連合講演会サンプル原稿], 
   authors: [◯ 自動太郎，制御花子(連合大学)，自動次郎 (連合会社)],
@@ -43,6 +43,10 @@ A4用紙の（US Letterは不可），縦250 mm，横170 mmの枠内に収まる
 
 == 図と表
 
+図と表は，Fig.~1，Table~1のように番号を振り
+（@fig:samplefig 参照），図説，図中の説明文は英文で記入してください．
+本文で引用する場合も「Fig.~1に示す」などのようにFig.とTableを使用してください．
+
 #figure(
   placement: top,
   // svg, png, jpg, gif に対応しています．
@@ -71,10 +75,6 @@ A4用紙の（US Letterは不可），縦250 mm，横170 mmの枠内に収まる
 //     [Reference], [9], [Mincho],
 //   )
 // ) <tab:fonts>
-
-図と表は，Fig.~1，Table~1のように番号を振り
-（@fig:samplefig 参照），図説，図中の説明文は英文で記入してください．
-本文で引用する場合も「Fig.~1に示す」などのようにFig.とTableを使用してください．
 
 図や表中の文字は小さくなりすぎないよう気をつけてください．
 PDF原稿を作成する際，図の画質が劣化しないよう，注意してください．

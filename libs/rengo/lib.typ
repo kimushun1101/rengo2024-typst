@@ -8,12 +8,12 @@
 
 // Theorem environment
 #import "@preview/ctheorems:1.1.2": *
-#let thmjp = thmplain.with(base: {}, separator: [#h(0.5em)], titlefmt: strong, inset: (top: 0em, left: 0em))
-#let definition = thmjp("definition", text(font: gothic)[定義])
-#let theorem = thmjp("theorem", text(font: gothic)[定理])
-#let corollary = thmjp("corollary",text(font: gothic)[系])
-#let lemma = thmjp("lemma",text(font: gothic)[補題])
-#let proof = thmproof("proof", text(font: gothic)[証明], separator: [#h(0.9em)], titlefmt: strong, inset: (top: 0em, left: 0em))
+#let thmjp = thmplain.with(base: {}, separator: [#h(0.5em)], titlefmt: it=>text(font: gothic, it), inset: (top: 0em, left: 0em))
+#let definition = thmjp("definition", "定義")
+#let theorem = thmjp("theorem", "定理")
+#let corollary = thmjp("corollary", "系")
+#let lemma = thmjp("lemma", "補題")
+#let proof = thmproof("proof",  "証明", separator: [#h(1.0em)], titlefmt:  it=>text(font: gothic, it), inset: (top: 0em, left: 0em))
 
 #let rengo(
   title: [タイトル],
@@ -27,9 +27,6 @@
 ) = {
   // Set document metadata.
   set document(title: title)
-
-  // Theorem environment
-  show: thmrules.with(qed-symbol: $square$)
 
   // Configure the page.
   set page(
@@ -78,7 +75,7 @@
       // We don't want to number of the acknowledgment section.
       #set par(first-line-indent: 0pt)
       #let is-ack = it.body in ([謝辞], [Acknowledgment], [Acknowledgement])
-      #set text(if is-ack { 11pt } else { 11pt }, font: gothic)
+      #set text(12pt, font: gothic)
       #v(20pt, weak: true)
       #if it.numbering != none and not is-ack {
         numbering("1.", ..levels)
@@ -89,7 +86,7 @@
     ] else [
       // The other level headings are run-ins.
       #set par(first-line-indent: 0pt)
-      #set text(10pt, weight: 400)
+      #set text(10pt, font: gothic)
       #v(10pt, weak: true)
       #if it.numbering != none {
         numbering("1.", ..levels)
@@ -105,6 +102,9 @@
   show figure.where(kind: table): set figure.caption(position: top)
   show figure.where(kind: image): set figure(placement: top, supplement: [Fig.])
   show figure.where(kind: image): set figure.caption(position: bottom)
+
+  // Theorem environment
+  show: thmrules.with(qed-symbol: $square$)
 
   // Display the paper's title.
   align(center, text(16pt, title, weight: "bold", font: gothic))
