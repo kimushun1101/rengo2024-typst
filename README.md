@@ -23,11 +23,10 @@ GitHub に慣れている方は，`git clone` したり `use this template` し�
 2. VS Code で `File`→`Open Folder` でこのフォルダーを開く．  
 3. 推奨拡張機能をインストール．  
   Extensions (`Ctrl` + `Shift` + `X`) の `Search Extensions in Marketplace` のテキストボックスに `@recommended` と入力すると表示される，以下の拡張機能をinstall をクリック．  
-    - [Typst LSP](https://marketplace.visualstudio.com/items?itemName=nvarner.typst-lsp)
-    - [Typst Preview](https://marketplace.visualstudio.com/items?itemName=mgt19937.typst-preview)
-4. Explorer (`Ctrl` + `Shift` + `E`) から `sample.typ` を開いた状態で，画面右上にある Typst Preview の方の ![view-icon](https://github.com/kimushun1101/typst-jp-conf-template/assets/13430937/a44c52cb-d23a-4fdb-ac9f-dc2b47deb40a) アイコンをクリック (
- `Ctrl` + `K` のあと `V`) でプレビューを表示．
-1. `Ctrl` + `S` で PDF を生成．
+    - [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
+4. Explorer (`Ctrl` + `Shift` + `E`) から `main.typ` を開いた状態で，画面右上にある Typst Preview の方の ![view-icon](https://github.com/kimushun1101/typst-jp-conf-template/assets/13430937/a44c52cb-d23a-4fdb-ac9f-dc2b47deb40a) アイコンをクリック (
+ `Ctrl` + `K` のあと `V`) でプレビューを表示．[トップにある動画](#typst-jp-conf-template) の操作です．
+5. `Ctrl` + `S` で PDF を生成．
 
 ### 公式 Web アプリを使用する場合
 1. https://typst.app/ から `Sign up` してアカウントを作成する．
