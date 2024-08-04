@@ -7,13 +7,13 @@
 #let english = ("Times New Roman", "New Computer Modern")
 
 // Theorem environment
-#import "@preview/ctheorems:1.1.2": *
-#let thmjp = thmplain.with(base: {}, separator: [#h(0.5em)], titlefmt: it=>text(font: gothic, it), inset: (top: 0em, left: 0em))
-#let definition = thmjp("definition", "定義")
-#let theorem = thmjp("theorem", "定理")
-#let corollary = thmjp("corollary", "系")
-#let lemma = thmjp("lemma", "補題")
-#let proof = thmproof("proof",  "証明", separator: [#h(1.0em)], titlefmt:  it=>text(font: gothic, it), inset: (top: 0em, left: 0em))
+#import "@preview/ctheorems:1.1.2": thmplain, thmproof, thmrules
+#let thmjp = thmplain.with(base: {}, separator: [#h(0.5em)], titlefmt: strong, inset: (top: 0em, left: 0em))
+#let definition = thmjp("definition", text(font: gothic)[定義])
+#let lemma = thmjp("lemma",text(font: gothic)[補題])
+#let theorem = thmjp("theorem", text(font: gothic)[定理])
+#let corollary = thmjp("corollary",text(font: gothic)[系])
+#let proof = thmproof("proof", text(font: gothic)[証明], separator: [#h(0.9em)], titlefmt: strong, inset: (top: 0em, left: 0em))
 
 #let rengo(
   title: [タイトル],
