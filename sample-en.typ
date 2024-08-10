@@ -35,7 +35,6 @@ Papers should be prepared in the following order:
 - Main body and references
 
 == Figures and tables
-
 Figures and tables should be numbered as Fig.~X and Table~X as shown in @fig:samplefig.
 Use the terms ``Fig." and ``Table" to refer to figures and tables.
 Characters in figures and tables should be of adequate size.
