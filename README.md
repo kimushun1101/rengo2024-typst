@@ -15,7 +15,7 @@ Typst の概要については https://typst.app/docs/tutorial/writing-in-typst/
 `sample-en.typ` ファイルと `libs/rengo-en` ディレクトリは英文テンプレート用です．
 
 ## 使用方法
-このファイルの最新版の入手は，[GitHub ページ](https://github.com/kimushun1101/rengo2024-typst) の `<>Code▼` の `Download ZIP` からできます．  
+このファイルの最新版の入手は，[GitHub Releases のページ](https://github.com/kimushun1101/rengo2024-typst/releases/latest) の `Source code` からできます．  
 GitHub に慣れている方は，`git clone` したり `use this template` したり，適宜扱ってください．
 
 ### VS Code を使用する場合
