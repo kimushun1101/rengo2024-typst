@@ -2,7 +2,8 @@
 #let std-bibliography = bibliography
 
 // Theorem environment
-#import "@preview/ctheorems:1.1.2": *
+#import "@preview/ctheorems:1.1.2": thmplain, thmproof, thmrules
+// #import "libs/ctheorems-1.1.2/lib.typ": thmplain, thmproof, thmrules
 #let thmjp = thmplain.with(base: {}, separator: [#h(0.5em)], titlefmt: strong, inset: (top: 0em, left: 0em))
 #let definition = thmjp("definition", "Definition")
 #let theorem = thmjp("theorem", "Theorem")

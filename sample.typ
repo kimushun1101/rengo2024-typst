@@ -88,6 +88,12 @@ $ y(t) &= C x(t) + D u(t) $ <eq:output>
 
 == 定理環境
 以下は，theorem 環境の使用例です．
+// ctheorems パッケージを使用しています．
+// Proxy などの関係でビルドできない場合には，libs フォルダーに手動ダウンロードしてお使いください．
+// + ctheorems-1.1.2 を https://typst.app/universe/package/ctheorems からダウンロードしてくる．
+// + `libs` フォルダーに展開する．
+// + `libs/rengo/lib.typ` で `"@preview/ctheorems:1.1.2"` となっている部分を `"libs/ctheorems-1.1.2/lib.typ"` と修正する．
+
 #theorem[
   ここに定理の内容を記述して下さい．系や補題の場合も同様です．
 ]

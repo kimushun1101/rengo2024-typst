@@ -77,7 +77,13 @@ $ y(t) &= C x(t) + D u(t). $ <eq:output>
 // The reference for the equation number is @eq:system or @eq:output.
 
 == Theorems
-The following is an example of the usage of the *theorem* environment.
+// The following is an example of the usage of the *theorem* environment.
+// The ctheorems package is imported.
+// If you can not build due to Proxy or other reasons, download the package manually into the libs folder and use it.
+// + Download ctheorems-1.1.2 from https://typst.app/universe/package/ctheorems 
+// + Extract the commpressed file into `libs` folder.
+// + Modify `libs/rengo/lib.typ` into `"@preview/ctheorems:1.1.2"` in `"libs/ctheorems-1.1.2/lib.typ"`.
+
 #theorem[
   Write the theorem here.
 ]
