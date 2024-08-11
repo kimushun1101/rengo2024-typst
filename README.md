@@ -2,7 +2,6 @@
 
 第67回自動制御連合講演会予稿集の原稿を Typst で書くときのテンプレートです．  
 Typst の概要については https://typst.app/docs/tutorial/writing-in-typst/ をご覧ください．  
-非公式な日本語資料としては，https://github.com/kimushun1101/How-to-use-typst-for-paper-jp も用意しておりますので，こちらもご活用ください．
 
 | ファイル       | 説明                                |
 | ------------- | ----------------------------------- |
