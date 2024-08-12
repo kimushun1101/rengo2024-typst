@@ -21,11 +21,9 @@ GitHub に慣れている方は，`git clone` したり `use this template` し�
 ### VS Code を使用する場合
 1. [VS Code](https://code.visualstudio.com/) をインストール．
 2. VS Code で `File`→`Open Folder` でこのフォルダーを開く．  
-3. 推奨拡張機能をインストール．  
-  Extensions (`Ctrl` + `Shift` + `X`) の `Search Extensions in Marketplace` のテキストボックスに `@recommended` と入力すると表示される，以下の拡張機能をinstall をクリック．  
-    - [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
-4. Explorer (`Ctrl` + `Shift` + `E`) から `main.typ` を開いた状態で，画面右上にある Typst Preview の方の ![view-icon](https://github.com/kimushun1101/typst-jp-conf-template/assets/13430937/a44c52cb-d23a-4fdb-ac9f-dc2b47deb40a) アイコンをクリック (
- `Ctrl` + `K` のあと `V`) でプレビューを表示．[トップにある動画](#typst-jp-conf-template) の操作です．
+3. 拡張機能 [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist) をインストール．  
+  右下にポップアップでオススメの拡張機能として提案される．このポップアップ通知を切っている場合には，Extensions (`Ctrl` + `Shift` + `X`) の `Search Extensions in Marketplace` のテキストボックスに `@recommended` と入力すると表示される．
+4. Explorer (`Ctrl` + `Shift` + `E`) から `main.typ` を開いた状態で，画面右上にある Typst Preview の方の ![view-icon](https://github.com/kimushun1101/typst-jp-conf-template/assets/13430937/a44c52cb-d23a-4fdb-ac9f-dc2b47deb40a) アイコンをクリック (`Ctrl` + `K` のあと `V`) でプレビューを表示．
 5. `Ctrl` + `S` で PDF を生成．
 
 ### 公式 Web アプリを使用する場合
@@ -40,12 +38,11 @@ GitHub に慣れている方は，`git clone` したり `use this template` し�
 ```
 typst compile sample.typ
 ```
-コマンドラインインターフェイス (CLI) のインストールについてはこちら https://github.com/typst/typst?tab=readme-ov-file#installation
-
-## 参考元
-- Typst で日本語論文を書くときのテンプレートとその使い方 : https://github.com/kimushun1101/typst-jp-conf-template
+コマンドラインインターフェイス (CLI) のインストールについてはこちら  
+https://github.com/typst/typst?tab=readme-ov-file#installation
 
 ## ライセンス
+Typst で日本語論文を書くときのテンプレートとその使い方 : https://github.com/kimushun1101/typst-jp-conf-template をもとに作成しております．  
 参考元にならってライセンスを付与しています．  
 Typst ファイル : MIT No Attribution  
 CSL ファイル : Creative Commons Attribution-ShareAlike 3.0 License  
