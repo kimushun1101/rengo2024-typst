@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make sample jp files
+        run: |
+          mkdir -p rengo-typst-jp/libs
+          cp -r --parents sample.typ README.md fig1.svg LICENSE.MD refs.bib refs.yml .vscode libs/rengo rengo-typst-jp
+          zip -r rengo-typst-jp.zip rengo-typst-jp
+      - name: Make sample en files
+        run: |
+          mkdir rengo-typst-en
+          cp -r --parents sample-en.typ README-en.md fig1.svg LICENSE.MD refs.bib refs.yml .vscode libs/rengo-en rengo-typst-en
+          zip -r rengo-typst-en.zip rengo-typst-en
+      - name: Make sample all files
+        run: |
+          mkdir rengo-typst-all
+          cp -r --parents sample.typ README.md sample-en.typ README-en.md fig1.svg LICENSE.MD refs.bib refs.yml .vscode libs/rengo libs/rengo-en rengo-typst-all
+          zip -r rengo-typst-all.zip rengo-typst-all
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            rengo-typst-jp.zip
+            rengo-typst-en.zip
+            rengo-typst-all.zip
+          draft: true
+          generate_release_notes: true
