@@ -23,7 +23,7 @@ jobs:
       - name: Make sample all files
         run: |
           mkdir rengo-typst-all
-          cp -r --parents sample.typ README.md sample-en.typ README-en.md fig1.svg LICENSE.MD refs.bib refs.yml .vscode libs/rengo libs/rengo-en rengo-typst-all
+          cp -r --parents rengo-typst-ja rengo-typst-en rengo-typst-all
           zip -r rengo-typst-all.zip rengo-typst-all
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
