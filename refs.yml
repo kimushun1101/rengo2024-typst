@@ -14,7 +14,7 @@ Journal:
 
 # 和文学術論文誌
 JournalJP:
-    language: jp # 和文の判定に必要
+    language: japanese # 和文の判定に必要
     type: Article
     title: 和文論文タイトル
     author: ["自動, 太郎", "制御, 花子", "自動, 次郎"]
@@ -40,7 +40,7 @@ Conference:
 
 # 国内学会
 ConferenceJP:
-    language: jp # 和文の判定に必要
+    language: japanese # 和文の判定に必要
     type: Article
     author: ["自動, 太郎", "制御, 花子", "自動, 次郎"]
     title: 自動連合講演会サンプル原稿
@@ -60,8 +60,8 @@ Book:
     date: 2024
 
 # 和文書籍
-BookJP:
-    language: jp # 和文の判定に必要
+BookJa:
+    language: japanese # 和文の判定に必要
     type: Book
     title: 書籍タイトル
     author: ["制御, 花子"]
