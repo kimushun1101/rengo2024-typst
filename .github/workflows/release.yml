@@ -22,15 +22,15 @@ jobs:
           zip -r rengo-typst-en.zip rengo-typst-en
       - name: Make sample all files
         run: |
-          mkdir rengo-typst-all
-          cp -r --parents rengo-typst-ja rengo-typst-en rengo-typst-all
-          zip -r rengo-typst-all.zip rengo-typst-all
+          mkdir rengo2024-typst
+          cp -r --parents rengo-typst-ja rengo-typst-en rengo2024-typst
+          zip -r rengo2024-typst.zip rengo2024-typst
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             rengo-typst-ja.zip
             rengo-typst-en.zip
-            rengo-typst-all.zip
+            rengo2024-typst.zip
           draft: true
           generate_release_notes: true
